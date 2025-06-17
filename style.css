@@ -1,0 +1,89 @@
+body {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    background: #fff;
+}
+
+.nav-bar p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: Roboto, sans-serif;
+}
+
+.navegacao ul li {
+    display: inline-block;
+}
+
+.navegacao ul li a{
+    text-decoration: none;
+    color: #000;
+    gap: 6px;
+    margin: 5px;
+}
+
+.banner {
+    background: #ada9f345;
+}
+
+.banner h1 {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    color: #000000b0;
+}
+
+.carrossel img {
+    width: 120px;
+    margin: 20px;
+}
+
+.carrossel {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    height: 280px;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.livross {
+    display: flex;
+    justify-self: center;
+    color: #fff;
+    align-self: center;
+    border: solid 1px #fff ;
+    border-radius: 20px;
+    background-color: #948ff073;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+.anterior, .proximo {
+    background: #ffffff83;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 50px;
+}
