@@ -1,7 +1,7 @@
 body {
     background: #f9f9f9;
     margin: 0;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .nav-bar {
@@ -16,6 +16,7 @@ body {
     font-weight: bold;
     font-size: 1.1rem;
     font-family: Roboto, sans-serif;
+    
 }
 
 .navegacao ul li {
@@ -27,6 +28,10 @@ body {
     color: #000;
     gap: 6px;
     margin: 5px;
+}
+
+.navegacao ul li a:hover {
+    color: #7069f4b7;
 }
 
 .banner {
@@ -76,6 +81,12 @@ body {
     padding: 10px 30px;
 }
 
+.livross:hover {
+    background: #6f66e3d3;
+    border: solid 3px #fff;
+    transform: scale(1.1);
+}
+
 .slide.ativo {
     display: block;
 }
@@ -85,6 +96,76 @@ body {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0px 15px;
     height: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin-top: 50px;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.livro {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.livro img {
+    width: 100%;
+    height: auto;
+}
+
+.content h2 {
+    margin: 5px;
+    font-size: 1.4rem;
+    width: auto;
+    font-family: sans-serif, roboto;
+    font-weight: 400;
+}
+
+.content p {
+    padding: 10px;
+} 
+
+.content h2 {
+    font-weight: 400;
+}
+
+.categorias {
+    text-align: center;
+    font-family: sans-serif, roboto;
+}
+
+.categs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 5px 30px;
+    margin-bottom: 60px;
+    overflow-x: auto;
+}
+
+.categs img {
+    width: 100px;
+    border: solid #000;
+    border-radius: 16px;
+}
+
+footer {
+    background: linear-gradient( transparent, #fff, #ada9f345);
+    text-align: center;
+    font-family: sans-serif, roboto;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+
+footer span {
+    margin-top: 5px;
+    padding: 0px;
 }
