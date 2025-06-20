@@ -7,8 +7,9 @@ body {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: space-between;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
     background: #fff;
 }
 
@@ -16,7 +17,11 @@ body {
     font-weight: bold;
     font-size: 1.1rem;
     font-family: Roboto, sans-serif;
-    
+    color: #625cd2d3;
+}
+
+.navegacao ul {
+    list-style: none;
 }
 
 .navegacao ul li {
@@ -44,19 +49,18 @@ body {
     text-align: center;
     justify-items: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     color: #000000b0;
 }
 
 .carrossel img {
     width: 120px;
     margin: 20px;
-    
 }
 
 .carrossel {
     position: relative;
-    width: 400px;
+    width: 100%;
     margin: auto;
     height: 280px;
     display: flex;
@@ -94,20 +98,31 @@ body {
 .anterior, .proximo {
     background: #ffffff83;
     border: none;
+    position: absolute;
     font-size: 2rem;
     cursor: pointer;
     padding: 0px 15px;
     height: 50px;
 }
 
+.anterior {
+    left: 0;
+}
+
+.proximo {
+    right: 0;
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    margin-top: 50px;
+    max-width: 500px;
+    margin-top: 70px;
+    margin: auto;
     text-align: center;
     gap: 20px;
-    padding: 10px;
+    padding: 40px 20px;
 }
 
 .livro {
@@ -121,6 +136,11 @@ body {
     height: auto;
 }
 
+.livro img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
 .content h2 {
     margin: 5px;
     font-size: 1.4rem;
@@ -132,10 +152,6 @@ body {
 .content p {
     padding: 10px;
 } 
-
-.content h2 {
-    font-weight: 400;
-}
 
 .categorias {
     text-align: center;
@@ -157,6 +173,11 @@ body {
     border-radius: 16px;
 }
 
+.categs img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
 footer {
     background: linear-gradient( transparent, #fff, #ada9f345);
     text-align: center;
@@ -168,4 +189,88 @@ footer {
 footer span {
     margin-top: 5px;
     padding: 0px;
+}
+
+@media screen and (min-width: 500px) {
+    .nav-bar {
+        padding: 0 10px;
+    }
+
+    .categs {
+        padding: 5px 17px;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .carrossel {
+        height: 320px;
+    }
+
+    .carrossel img {
+        width: 150px;
+        margin: 20px;
+    }
+
+    .content {
+        gap: 50px;
+        padding: 30px 20px;
+    }
+
+    .livross {
+        padding: 10px 40px;
+    }
+
+    .categs {
+        gap: 30px;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .carrossel {
+        height: 340px;
+    }
+
+    .carrossel img {
+        width: 150px;
+        margin: 20px;
+    }
+
+    .livross {
+        padding: 10px 45px;
+    }
+
+    .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    max-width: 900px;
+    margin-top: 70px;
+    margin: auto;
+    text-align: center;
+    gap: 60px;
+    padding: 40px 20px;
+    }
+
+    .categs {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .carrossel {
+        height: 400px;
+    }
+
+    .carrossel img {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .content {
+        padding: 30px 15px;
+        gap: 90px;
+    }
 }
